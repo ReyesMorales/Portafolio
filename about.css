@@ -1,0 +1,31 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+    background-color: rgb(144, 144, 221);
+}
+
+.about-info {
+    grid-column: 5 / 10;
+    padding: 3em;
+}
+
+.about img {
+    width: 100%;
+    grid-column: 1 / 5;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    /*background-color: rgb(0, 119, 255);*/
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+

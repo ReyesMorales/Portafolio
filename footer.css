@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: aquamarine;
+}
+
+.footer-content h2{
+    font-size: 3em;
+}
+
+.footer-content h4 {
+    font-size: 1.5em;
+}
+
+.social-network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-top: 1em;
+}
+
+/*para cuando tenga los iconos
+copiamos lo que tenemos en el h4
+*/

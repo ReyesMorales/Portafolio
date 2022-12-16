@@ -4,26 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="contact-form.css">
 </head>
 <body>
-    <section>
-        <h1>Nav bar</h1>
-    </section>
-    <section>
-        <h1>Header</h1>
-    </section>
-    <section>
-        <h1>Carrousel myProjects</h1>
-    </section>
-    <section>
-        <h1>Skills</h1>
-    </section>
-    <section>
-        <h1>Contact Form</h1>
-    </section>
-    <section>
-        <h1>Footer</h1>
+<!--navegacion, main a parte esto dicho por el porfe-->
+<!--csv-->    
+<section>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h1>M<span>&</span>M</h1>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+               
+            <div class="toogle-menu">
+                <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+                <label for="abrir-cerrar" class="toggle-button"></label>
+            </div>
+                
+            </nav>
+        </header>
+        <main class="main">
+            <div class="info-content">
+            <h1>Somos Michi y Micha</h1>                           
+            <span class="info-content-subtitle">Frontend Developers Cat's</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi reiciendis consequuntur, temporibus tenetur nam omnis optio dolorem laborum iusto sunt facilis voluptate recusandae in cum asperiores ut perspiciatis labore? Quaerat.</p>
+            </div>
+            <img src="header.jpg" alt="codigo" width="100%">
+            <!--revisar esta imagen con lo que vimos en clase-->        
+        </main>          
+    </div>
+</section>  
+<section>
+    <div class="about">
+        <img src="header.jpg" alt="">        
+        <div class="about-info">
+            <h2>About me</h2>
+            <div class="divider"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi vero laborum quod, repudiandae, a doloremque illum iure dolorum debitis beatae, cupiditate vitae? Fuga odit iste accusamus perferendis a deserunt aliquam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis similique rem, vitae voluptates nisi doloribus quas sunt neque laborum unde doloremque consectetur voluptas temporibus modi repellat earum enim. Iste, deleniti!</p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="portfolio">
+        <div class="portfolio-headings">
+            <h2>My Portfolio</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-img">
+                </div>
+                <div class="card-title">
+                    <h2>Project description</h2>
+                </div>
+                <div class="card-projects-links"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>                
+    <div class="contact-section">
+        <div class="contact-headings">
+            <h2>Keep in touch</h2>
+            <div class="divider"></div>
+        </div>        
+        <div class="container-contact">
+            <img src="./header.jpg" alt="">
+            <div class="contact-form">
+                <h4>Send me a message</h4>
+                <form action="" class="form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje a qui"></textarea>
+                    <button type="submit" class="btn-submit">
+                        Send me a message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <h1>Contact Form</h1>
+    <form 
+        action=""
+        method="post"
+        > 
+        <div class="container">
+            <div class="contact">
+                <div class="contact-field">
+                    <label for="name"></label>
+                    <input required name="nombre" type="text" id="name" placeholder="Name" value="Name">
+                </div>
+                <div class="contact-field">
+                    <label for="surname"></label>
+                    <input required name="apellidos" type="text" id="surname" placeholder="Last Name" value="Last Name">
+                </div>
+            </div>
+           
+                <div class="contact-field">
+                    <label for="phone"></label>
+                    <input required name="telefono" type="phone" id="phone" placeholder="Phone" value="Phone">
+                </div>
+                <div class="contact-field">
+                    <label for="mail"></label>
+                    <input required name="correo" type="email" id="mail" placeholder="Email" value="Email">
+                </div>            
+        </div>        
+        </form>
+        <hr>
+            <div>
+                <label for="text">¿Cómo me conociste?</label>
+                <fieldset>                    
+                    <label for="universidad">Universidad</label>
+                    <input type="radio" id="universidad" name="cuestionario" value="universidad">
+                    <label for="keepcoding">Keepcoding</label>
+                    <input type="radio" id="keepcoding" name="cuestionario" value="keepcoding">                    
+                    <label for="kickoff">Kickoff</label>
+                    <input type="radio" id="kickoff" name="cuestionario" value="kickoff">                    
+                    <label for="colegio">Colegio</label>
+                    <input type="radio" id="colegio" name="cuestionario" value="colegio">                    
+                    <label for="github">Github</label>
+                    <input type="radio" id="github" name="cuestionario" value="github">
+                </fieldset>
+            </div>            
+</section>
+<section>
+    <footer class="footer">
+        <div class="footer-content">
+        <h2>Michi&Micha</h2>
+        <h4>Cats Developers</h4>
+        </div>
+        <div class="social-network"> 
+           <h5>iconos de redes sociales</h5>
+           
+        </div>
+        <!--clase day1, tema de dejar informacion nuestra, lo pone en la practica. Cuando hagamos el link a redes sociales tenemos que añadir rel="noreferrer noopener" y de paso tambien ponemos el targer="_blank" para que nos abra una pestaña nueva clase day1 3:33-->
+        </footer>
     </section>
 </body>
 </html>
